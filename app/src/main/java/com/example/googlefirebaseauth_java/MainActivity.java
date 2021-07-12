@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
                 String password = passwordField.getText().toString();
 
                 if (email.isEmpty()) {
-
+                    emailField.setError("Please Enter Your Email.");
                 }
             }
         });
