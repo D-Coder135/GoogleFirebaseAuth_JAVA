@@ -38,4 +38,13 @@
         android:layout_marginBottom="262dp"
         android:background="#0A8DF6"
         android:text="Register" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="149dp" />
 </RelativeLayout>
