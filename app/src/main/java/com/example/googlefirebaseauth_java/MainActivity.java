@@ -31,8 +31,10 @@ public class MainActivity extends AppCompatActivity {
                     emailField.setError("Please Enter Your Email.");
                     return;
                 } else {
-                    passwordField.setError("Please Enter Your Password.");
-                    return;
+                    if (password.isEmpty()) {
+                        passwordField.setError("Please Enter Your Password.");
+                        return;
+                    }
                 }
             }
         });
