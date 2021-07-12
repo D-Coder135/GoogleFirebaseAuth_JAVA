@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
                     return;
                 } else {
                     passwordField.setError("Please Enter Your Password.");
+                    return;
                 }
             }
         });
