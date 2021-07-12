@@ -26,6 +26,10 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String email = emailField.getText().toString();
                 String password = passwordField.getText().toString();
+
+                if (email.isEmpty()) {
+
+                }
             }
         });
 
