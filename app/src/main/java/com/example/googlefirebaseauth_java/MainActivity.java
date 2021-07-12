@@ -57,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
                             progressBar.setVisibility(View.INVISIBLE);
                         } else {
                             Toast.makeText(MainActivity.this, "Database Not Updated!", Toast.LENGTH_SHORT).show();
+                            progressBar.setVisibility(View.INVISIBLE);
 
                         }
                     }
