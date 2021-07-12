@@ -36,5 +36,5 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="262dp"
-        android:text="Button" />
+        android:text="Register" />
 </RelativeLayout>
