@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         passwordField = findViewById(R.id.editText2);
         passwordField.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
         registerButton = findViewById(R.id.button);
+        progressBar = findViewById(R.id.progressBar);
 
         registerButton.setOnClickListener(new View.OnClickListener() {
             @Override
