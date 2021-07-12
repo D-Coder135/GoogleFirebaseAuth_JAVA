@@ -1,0 +1,2 @@
+rootProject.name = "GoogleFirebaseAuth_JAVA"
+include ':app'
