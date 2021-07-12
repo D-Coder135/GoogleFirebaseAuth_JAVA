@@ -51,9 +51,11 @@ public class MainActivity extends AppCompatActivity {
                 firebaseAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull @org.jetbrains.annotations.NotNull Task<AuthResult> task) {
+                        if (task.isSuccessful()) {
 
+                        }
                     }
-                })
+                });
             }
         });
 
