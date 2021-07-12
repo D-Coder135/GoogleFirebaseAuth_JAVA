@@ -15,6 +15,5 @@
         android:layout_marginStart="3dp"
         android:layout_marginTop="86dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name" />
+        android:inputType="textPersonName" />
 </RelativeLayout>
