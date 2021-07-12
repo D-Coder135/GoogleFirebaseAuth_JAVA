@@ -7,10 +7,12 @@ import android.text.InputType;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 
 public class MainActivity extends AppCompatActivity {
     EditText emailField, passwordField;
     Button registerButton;
+    ProgressBar progressBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
