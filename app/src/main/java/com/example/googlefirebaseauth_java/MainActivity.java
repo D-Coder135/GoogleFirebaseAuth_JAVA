@@ -54,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
                     public void onComplete(@NonNull @org.jetbrains.annotations.NotNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
                             Toast.makeText(MainActivity.this, "Database Updated!", Toast.LENGTH_SHORT).show();
+                            progressBar.setVisibility(View.INVISIBLE);
                         }
                     }
                 });
