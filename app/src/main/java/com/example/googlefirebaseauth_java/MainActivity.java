@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         registerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                String email = emailField.getText().toString();
             }
         });
 
