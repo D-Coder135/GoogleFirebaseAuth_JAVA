@@ -16,5 +16,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         emailField = findViewById(R.id.editText);
         passwordField = findViewById(R.id.editText2);
+        registerButton = findViewById(R.id.button);
     }
 }
