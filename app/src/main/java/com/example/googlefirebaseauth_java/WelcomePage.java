@@ -3,6 +3,7 @@ package com.example.googlefirebaseauth_java;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -21,6 +22,7 @@ public class WelcomePage extends AppCompatActivity {
 
         logoutButton.setOnClickListener(v -> {
             firebaseAuth.signOut();
+            Toast.makeText(WelcomePage.this, "You Have Been Logged Out Successfully!", Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(WelcomePage.this, MainActivity.class);
             startActivity(intent);
             finish();
