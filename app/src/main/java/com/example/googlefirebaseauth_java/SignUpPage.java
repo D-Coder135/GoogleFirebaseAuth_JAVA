@@ -53,7 +53,7 @@ public class SignUpPage extends AppCompatActivity {
             progressBar.setVisibility(View.VISIBLE);
             firebaseAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(task -> {
                 if (task.isSuccessful()) {
-                    Toast.makeText(SignUpPage.this, "Database Updated!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(SignUpPage.this, "Database Updated! Please Log In To Continue.", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(SignUpPage.this, MainActivity.class);
                     startActivity(intent);
                     finish();
