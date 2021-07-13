@@ -3,8 +3,10 @@ package com.example.googlefirebaseauth_java;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.Button;
 
 public class WelcomePage extends AppCompatActivity {
+    Button logoutButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
