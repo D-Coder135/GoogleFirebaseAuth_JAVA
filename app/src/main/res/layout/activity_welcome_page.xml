@@ -12,7 +12,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="187dp"
-        android:layout_marginEnd="174dp"
-        android:text="WELCOME,!" />
+        android:layout_marginTop="186dp"
+        android:layout_marginEnd="129dp"
+        android:text="WELCOME!"
+        android:textSize="34sp" />
 </RelativeLayout>
