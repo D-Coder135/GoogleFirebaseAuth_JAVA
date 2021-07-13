@@ -22,7 +22,7 @@ public class WelcomePage extends AppCompatActivity {
         logoutButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                firebaseAuth.signOut();
             }
         });
     }
