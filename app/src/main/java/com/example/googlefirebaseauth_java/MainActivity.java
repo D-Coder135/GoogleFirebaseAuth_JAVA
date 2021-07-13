@@ -14,7 +14,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
     EditText emailField, passwordField;
-    Button registerButton;
+    Button loginButton;
     ProgressBar progressBar;
     FirebaseAuth firebaseAuth;
 
@@ -25,11 +25,11 @@ public class MainActivity extends AppCompatActivity {
         emailField = findViewById(R.id.editText);
         passwordField = findViewById(R.id.editText2);
         passwordField.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
-        registerButton = findViewById(R.id.button);
+        loginButton = findViewById(R.id.button);
         progressBar = findViewById(R.id.progressBar);
         firebaseAuth = FirebaseAuth.getInstance();
 
-        registerButton.setOnClickListener(v -> {
+        loginButton.setOnClickListener(v -> {
             String email = emailField.getText().toString();
             String password = passwordField.getText().toString();
 
