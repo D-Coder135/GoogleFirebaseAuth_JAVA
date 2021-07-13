@@ -55,6 +55,7 @@ public class SignUpPage extends AppCompatActivity {
                 if (task.isSuccessful()) {
                     Toast.makeText(SignUpPage.this, "Database Updated!", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(SignUpPage.this, MainActivity.class);
+                    startActivity(intent);
                 } else {
                     Toast.makeText(SignUpPage.this, "Database Not Updated!", Toast.LENGTH_SHORT).show();
 
