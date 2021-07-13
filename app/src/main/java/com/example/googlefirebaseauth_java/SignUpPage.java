@@ -5,9 +5,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.InputType;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
+import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 
@@ -33,6 +35,31 @@ public class SignUpPage extends AppCompatActivity {
             Intent intent = new Intent(SignUpPage.this, MainActivity.class);
             startActivity(intent);
             finish();
+        });
+
+        registerButton.setOnClickListener(v -> {
+            String email = emailField.getText().toString();
+            String password = passwordField.getText().toString();
+
+            if (email.isEmpty()) {
+                emailField.setError("Please Enter Your Email.");
+                return;
+            } else {
+                if (password.isEmpty()) {
+                    passwordField.setError("Please Enter Your Password.");
+                    return;
+                }
+            }
+            progressBar.setVisibility(View.VISIBLE);
+            firebaseAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(task -> {
+                if (task.isSuccessful()) {
+                    Toast.makeText(SignUpPage.this, "Database Updated!", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(SignUpPage.this, "Database Not Updated!", Toast.LENGTH_SHORT).show();
+
+                }
+                progressBar.setVisibility(View.INVISIBLE);
+            });
         });
     }
 }
