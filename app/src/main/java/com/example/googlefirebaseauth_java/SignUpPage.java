@@ -2,6 +2,7 @@ package com.example.googlefirebaseauth_java;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.InputType;
 import android.widget.Button;
@@ -27,5 +28,11 @@ public class SignUpPage extends AppCompatActivity {
         backButton = findViewById(R.id.button4);
         progressBar = findViewById(R.id.progressBar2);
         firebaseAuth = FirebaseAuth.getInstance();
+
+        backButton.setOnClickListener(v -> {
+            Intent intent = new Intent(SignUpPage.this, MainActivity.class);
+            startActivity(intent);
+            finish();
+        });
     }
 }
