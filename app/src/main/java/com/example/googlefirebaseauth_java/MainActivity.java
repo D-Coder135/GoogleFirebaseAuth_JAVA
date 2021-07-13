@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
         passwordField = findViewById(R.id.editText2);
         passwordField.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
         loginButton = findViewById(R.id.button);
+        signupButton = findViewById(R.id.button2);
         progressBar = findViewById(R.id.progressBar);
         firebaseAuth = FirebaseAuth.getInstance();
 
