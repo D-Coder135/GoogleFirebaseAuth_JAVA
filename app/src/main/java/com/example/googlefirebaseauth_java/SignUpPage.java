@@ -24,7 +24,7 @@ public class SignUpPage extends AppCompatActivity {
         passwordField = findViewById(R.id.editText4);
         passwordField.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
         registerButton = findViewById(R.id.button3);
-        backButton = findViewById(R.id.button2);
+        backButton = findViewById(R.id.button4);
         progressBar = findViewById(R.id.progressBar2);
         firebaseAuth = FirebaseAuth.getInstance();
     }
