@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
             progressBar.setVisibility(View.VISIBLE);
-            firebaseAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(task -> {
+            firebaseAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(task -> {
                 if (task.isSuccessful()) {
                     Toast.makeText(MainActivity.this, "Database Updated!", Toast.LENGTH_SHORT).show();
                 } else {
