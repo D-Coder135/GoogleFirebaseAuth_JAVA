@@ -54,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
             firebaseAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(task -> {
                 if (task.isSuccessful()) {
                     Toast.makeText(MainActivity.this, "Database Updated!", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(MainActivity.this, WelcomePage.class);
                 } else {
                     Toast.makeText(MainActivity.this, "Database Not Updated!", Toast.LENGTH_SHORT).show();
 
