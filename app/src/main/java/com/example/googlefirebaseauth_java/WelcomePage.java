@@ -20,14 +20,11 @@ public class WelcomePage extends AppCompatActivity {
         logoutButton = findViewById(R.id.button5);
         firebaseAuth = FirebaseAuth.getInstance();
 
-        logoutButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                firebaseAuth.signOut();
-                Intent intent = new Intent(WelcomePage.this, MainActivity.class);
-                startActivity(intent);
-                finish();
-            }
+        logoutButton.setOnClickListener(v -> {
+            firebaseAuth.signOut();
+            Intent intent = new Intent(WelcomePage.this, MainActivity.class);
+            startActivity(intent);
+            finish();
         });
     }
 }
