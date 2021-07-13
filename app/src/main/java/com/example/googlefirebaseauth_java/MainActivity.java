@@ -56,6 +56,7 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, "Database Updated!", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(MainActivity.this, WelcomePage.class);
                     startActivity(intent);
+                    finish();
                 } else {
                     Toast.makeText(MainActivity.this, "Database Not Updated!", Toast.LENGTH_SHORT).show();
 
