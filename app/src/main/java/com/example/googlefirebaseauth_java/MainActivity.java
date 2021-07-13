@@ -31,13 +31,10 @@ public class MainActivity extends AppCompatActivity {
         progressBar = findViewById(R.id.progressBar);
         firebaseAuth = FirebaseAuth.getInstance();
 
-        signupButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, SignUpPage.class);
-                startActivity(intent);
-                finish();
-            }
+        signupButton.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, SignUpPage.class);
+            startActivity(intent);
+            finish();
         });
 
         loginButton.setOnClickListener(v -> {
