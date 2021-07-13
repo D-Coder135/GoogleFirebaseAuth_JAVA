@@ -37,7 +37,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="262dp"
         android:background="#0A8DF6"
-        android:text="Register" />
+        android:text="Login" />
 
     <ProgressBar
         android:id="@+id/progressBar"
