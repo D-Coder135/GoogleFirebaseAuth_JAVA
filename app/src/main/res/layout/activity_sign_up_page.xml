@@ -50,7 +50,7 @@
         android:layout_marginBottom="149dp" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
